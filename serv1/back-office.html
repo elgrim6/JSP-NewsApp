@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="back-office.css">
+    <title>Back-Office ISCTEM</title>
+</head>
+<body>
+
+    <h1>Back-Office ISCTEM - Adicionar Notícia</h1>
+
+    <form action="/serv1/servlet" method="post">
+        <label for="tema">Tema da Notícia:</label>
+        <select id="tema" name="tema">
+            <option value="noticias-gerais">Notícias Gerais</option>
+            <option value="avisos">Avisos</option>
+            <option value="exames">Exames</option>
+            <option value="desporto">Desporto</option>
+            <option value="eventos">Eventos</option>
+        </select>
+
+        <br>
+
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <br>
+
+        <label for="conteudo">Conteúdo da Notícia:</label>
+        <textarea id="conteudo" name="conteudo" rows="4" cols="50" required></textarea>
+
+        <br>
+
+        <button type="submit">Adicionar Notícia</button>
+    </form>
+
+</body>
+</html>
